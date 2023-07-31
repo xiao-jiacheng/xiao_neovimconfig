@@ -14,7 +14,7 @@ require("mason").setup({
 -- lspconfig插件启动 各语言启动选项可设置
 
 require("mason-lspconfig").setup {
-    ensure_installed = { "lua_ls", "clangd"}, --, "gopls"},
+    ensure_installed = { "lua_ls"}--, "clangd"}, --, "gopls"},
 }
 
 
@@ -26,6 +26,6 @@ require("mason-lspconfig").setup()
 -- ...
 
 require("lspconfig").lua_ls.setup {}
-require("lspconfig").clangd.setup {}
+--require("lspconfig").clangd.setup {}
 
 

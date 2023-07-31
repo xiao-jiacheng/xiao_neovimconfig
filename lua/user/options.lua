@@ -36,7 +36,7 @@ opt.smartcase = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
-vim.cmd[[colorscheme tokyonight]]
+--vim.cmd[[colorscheme tokyonight]]
 --vim.cmd[[colorscheme default]]
 --vim.cmd[[colorscheme soft-era]]
 
