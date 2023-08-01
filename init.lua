@@ -16,12 +16,15 @@ require('plugins.nvim-tree')
 
 require('plugins.telescope')
 
-require('plugins.indent_blankline')
+require('plugins.dashboard-nvim')
+--require('plugins.indent_blankline')
 
-require('lsp.lsp')
+--require('lsp.lsp')
 
+--require('plugins.markdown-preview')
 
---require('plugins.dashboard-nvim')
+--require('alpha')
+--require('dashboard')
 
 
 
