@@ -29,6 +29,9 @@ local plugins = {
         'nvim-tree/nvim-web-devicons', -- 文档树图标
       }
     },
+    
+    -- bufferline
+    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
     {
       'nvim-lualine/lualine.nvim',  -- 状态栏

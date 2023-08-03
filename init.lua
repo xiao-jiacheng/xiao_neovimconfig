@@ -17,6 +17,10 @@ require('plugins.nvim-tree')
 require('plugins.telescope')
 
 require('plugins.dashboard-nvim')
+
+require('plugins.bufferline')
+
+--require('colorscheme')
 --require('plugins.indent_blankline')
 
 --require('lsp.lsp')
