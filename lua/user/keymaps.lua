@@ -8,13 +8,12 @@ local keymap = vim.keymap
 
 -- -----------------  插入模式  -----------------
 -- keymap.set("i", "jk" , "<ESC>")
-keymap.set("i", "<C-k>", "<Up>")
-keymap.set("i", "<C-j>", "<Down>")
-keymap.set("i", "<C-f>", "<Left>")
-keymap.set("i", "<C-l>", "<Right>")
+keymap.set("i", "<M-k>", "<Up>")
+keymap.set("i", "<M-j>", "<Down>")
+keymap.set("i", "<M-h>", "<Left>")
+keymap.set("i", "<M-l>", "<Right>")
 --
 --
 -- -----------------  普通模式  -----------------
 keymap.set("n", "<leader>nh", ":nohl<CR>")
-keymap.set("n", "<F2>", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>cs", ":colorscheme<CR>")

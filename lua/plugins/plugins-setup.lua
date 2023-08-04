@@ -47,7 +47,12 @@ local plugins = {
         }
       end,
       dependencies = { {'nvim-tree/nvim-web-devicons'}}
-    }
+    },
+
+    {
+      'neoclide/coc.nvim',
+      branch = 'release'
+   },
 
 }
 
