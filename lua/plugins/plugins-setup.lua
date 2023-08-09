@@ -33,11 +33,19 @@ local plugins = {
     -- bufferline
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
+    -- lualine
     {
       'nvim-lualine/lualine.nvim',  -- 状态栏
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }  -- 状态栏图标
     },
 
+    -- markdown preview
+    {
+       "iamcco/markdown-preview.nvim",
+       build = function() vim.fn["mkdp#util#install"]() end,
+    },
+
+    -- dashboard-nvim
     {
       'glepnir/dashboard-nvim',
       event = 'VimEnter',
@@ -49,6 +57,10 @@ local plugins = {
       dependencies = { {'nvim-tree/nvim-web-devicons'}}
     },
 
+    -- 快速注释 gcc  gc
+    "tpope/vim-commentary",
+
+    --coc
     {
       'neoclide/coc.nvim',
       branch = 'release'
