@@ -19,7 +19,7 @@ require('plugins.nvim-tree')
 
 require('plugins.telescope')
 
-require('plugins.dashboard-nvim')
+require('plugins.startup_screen')
 
 require('plugins.bufferline')
 
@@ -32,7 +32,6 @@ require('plugins.bufferline')
 --require('plugins.markdown-preview')
 
 --require('alpha')
---require('dashboard')
 
 
 
