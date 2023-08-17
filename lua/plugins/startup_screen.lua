@@ -22,21 +22,25 @@ local coolLines = {
 }
 
 local robustLines  = {
-      [[⡿⠋⠄⣀⣀⣤⣴⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣌⠻⣿⣿]],
-      [[⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠹⣿]],
-      [[⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠹]],
-      [[⣿⣿⡟⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡛⢿⣿⣿⣿⣮⠛⣿⣿⣿⣿⣿⣿⡆]],
-      [[⡟⢻⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣣⠄⡀⢬⣭⣻⣷⡌⢿⣿⣿⣿⣿⣿]],
-      [[⠃⣸⡀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠈⣆⢹⣿⣿⣿⡈⢿⣿⣿⣿⣿]],
-      [[⠄⢻⡇⠄⢛⣛⣻⣿⣿⣿⣿⣿⣿⣿⣿⡆⠹⣿⣆⠸⣆⠙⠛⠛⠃⠘⣿⣿⣿⣿]],
-      [[⠄⠸⣡⠄⡈⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠁⣠⣉⣤⣴⣿⣿⠿⠿⠿⡇⢸⣿⣿⣿]],
-      [[⠄⡄⢿⣆⠰⡘⢿⣿⠿⢛⣉⣥⣴⣶⣿⣿⣿⣿⣻⠟⣉⣤⣶⣶⣾⣿⡄⣿⡿⢸]],
-      [[⠄⢰⠸⣿⠄⢳⣠⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣼⣿⣿⣿⣿⣿⣿⡇⢻⡇⢸]],
-      [[⢷⡈⢣⣡⣶⠿⠟⠛⠓⣚⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢸⠇⠘]],
-      [[⡀⣌⠄⠻⣧⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠛⢿⣿⣿⣿⣿⣿⡟⠘⠄⠄]],
-      [[⣷⡘⣷⡀⠘⣿⣿⣿⣿⣿⣿⣿⣿⡋⢀⣠⣤⣶⣶⣾⡆⣿⣿⣿⠟⠁⠄⠄⠄⠄]],
-      [[⣿⣷⡘⣿⡀⢻⣿⣿⣿⣿⣿⣿⣿⣧⠸⣿⣿⣿⣿⣿⣷⡿⠟⠉⠄⠄⠄⠄⡄⢀]],
-      [[⣿⣿⣷⡈⢷⡀⠙⠛⠻⠿⠿⠿⠿⠿⠷⠾⠿⠟⣛⣋⣥⣶⣄⠄⢀⣄⠹⣦⢹⣿]],
+   [[⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⣠⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣡⣾⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣟⠻⣿⣿⣿⣿⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⣿⣿⡿⢫⣷⣿⣿⣿⣿⣿⣿⣿⣾⣯⣿⡿⢧⡚⢷⣌⣽⣿⣿⣿⣿⣿⣶⡌⣿⣿⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⣿⣿⠇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣇⣘⠿⢹⣿⣿⣿⣿⣿⣻⢿⣿⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⣿⣿⠀⢸⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⡟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣻⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⣿⡇⠀⣬⠏⣿⡇⢻⣿⣿⣿⣿⣿⣿⣿⣷⣼⣿⣿⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⢻⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⣿⠀⠈⠁⠀⣿⡇⠘⡟⣿⣿⣿⣿⣿⣿⣿⣿⡏⠿⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⣇⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⡏⠀⠀⠐⠀⢻⣇⠀⠀⠹⣿⣿⣿⣿⣿⣿⣩⡶⠼⠟⠻⠞⣿⡈⠻⣟⢻⣿⣿⣿⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⢿⠀⡆⠀⠘⢿⢻⡿⣿⣧⣷⢣⣶⡃⢀⣾⡆⡋⣧⠙⢿⣿⣿⣟⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⡥⠂⡐⠀⠁⠑⣾⣿⣿⣾⣿⣿⣿⡿⣷⣷⣿⣧⣾⣿⣿⣿⣿⣿⣿⣿]],
+   [[⣿⣿⡿⣿⣍⡴⠆⠀⠀⠀⠀⠀⠀⠀⠀⣼⣄⣀⣷⡄⣙⢿⣿⣿⣿⣿⣯⣶⣿⣿⢟⣾⣿⣿⢡⣿⣿⣿⣿⣿]],
+   [[⣿⡏⣾⣿⣿⣿⣷⣦⠀⠀⠀⢀⡀⠀⠀⠠⣭⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⣡⣾⣿⣿⢏⣾⣿⣿⣿⣿⣿]],
+   [[⣿⣿⣿⣿⣿⣿⣿⣿⡴⠀⠀⠀⠀⠀⠠⠀⠰⣿⣿⣿⣷⣿⠿⠿⣿⣿⣭⡶⣫⠔⢻⢿⢇⣾⣿⣿⣿⣿⣿⣿]],
+   [[⣿⣿⣿⡿⢫⣽⠟⣋⠀⠀⠀⠀⣶⣦⠀⠀⠀⠈⠻⣿⣿⣿⣾⣿⣿⣿⣿⡿⣣⣿⣿⢸⣾⣿⣿⣿⣿⣿⣿⣿]],
+   [[⡿⠛⣹⣶⣶⣶⣾⣿⣷⣦⣤⣤⣀⣀⠀⠀⠀⠀⠀⠀⠉⠛⠻⢿⣿⡿⠫⠾⠿⠋⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿]],
+   [[⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣀⡆⣠⢀⣴⣏⡀⠀⠀⠀⠉⠀⠀⢀⣠⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿]],
+   [[⠿⠛⠛⠛⠛⠛⠛⠻⢿⣿⣿⣿⣿⣯⣟⠷⢷⣿⡿⠋⠀⠀⠀⠀⣵⡀⢠⡿⠋⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿]],
+   [[⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⢿⣿⣿⠂⠀⠀⠀⠀⠀⢀⣽⣿⣿⣿⣿⣿⣿⣿⣍⠛⠿⣿⣿⣿⣿⣿⣿]],
 }
 
 
@@ -135,23 +139,111 @@ local function header_color()
   return output
 end
 
-local theme = require("alpha.themes.theta")
-local config = theme.config
+local theta= require("alpha.themes.theta")
 local dashboard = require("alpha.themes.dashboard")
+local config = dashboard.config
 local buttons = {
     type = "group",
     val = {
-        { type = "text", val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
-        { type = "padding", val = 1 },
-        dashboard.button("e", "  New file", "<cmd>ene<CR>"),
-        dashboard.button(",ff", "󰍉  Find file"),
-        dashboard.button(",fg", "󰈞  Find text"),
-        dashboard.button("l", "  Lazy plugins", "<cmd>Lazy<CR>"),
-        dashboard.button("q", "󰩈  Quit", "<cmd>qa<CR>"),
+        dashboard.button("e      ", "  New file", "<cmd>ene<CR>"),
+        dashboard.button(", f f  ", "󰍉  Find file"),
+        dashboard.button(", f g  ", "󰈞  Find text"),
+        dashboard.button("l      ", "  Lazy plugins", "<cmd>Lazy<CR>"),
+        --dashboard.button(", f e", "󰋚 File history", leader, nil, {
+        --    noremap = true,
+        --    silent = true,
+        --    nowait = true,
+        --    callback = function()
+        --        require("telescope.builtin").oldfiles()
+        --    end,
+        --}),
+        --dashboard.button("SPC f r", "  Frecency/MRU"),
+        --dashboard.button("SPC f m", "  Jump to bookmarks"),
+        dashboard.button("q      ", "󰩈  Quit", "<cmd>qa<CR>"),
     },
-    position = "center",
+    opts = {
+        spacing = 1,
+    },
 }
 
-config.layout[2] = header_color()
-config.layout[6] = buttons
+local time = os.date("%Y-%m-%d | %H:%M:%S",os.time()) 
+local function footer()
+    --return "   Have Fun with neovim"
+    --return " 󰩃 󰋇 󱐟  小狗不需要思考，只需要顿顿吃饱 󱚡  "
+    local foot = {
+       "󰩃 󰋇 󱐟  小狗不需要思考，只需要顿顿吃饱  󱚡  " ,
+       "" ,
+       --"          Have Fun with neovim   ",
+       --"",
+       
+       "           "..time..             "    " 
+    }
+    return foot 
+end
+dashboard.section.footer.val = footer()
+dashboard.section.footer.opts.hl = "AlphaFooter"
+
+ local sessions = {
+        type = 'group',
+        val = function ()
+            local autosession = require('auto-session')
+            local sessions_root = autosession.get_root_dir()
+            local sessions = autosession.get_session_files()
+            local val = {
+                {
+                    type = 'text',
+                    val = 'Recent sessions',
+                    opts = { position = 'center' }
+                },
+                {
+                    type = 'padding',
+                    val = 1,
+                },
+            }
+            table.sort(sessions, function (a, b)
+                local a_time = vim.fn.getftime(sessions_root .. a.path)
+                local b_time = vim.fn.getftime(sessions_root .. b.path)
+                return a_time > b_time
+            end)
+            for i, session in ipairs(sessions) do
+                if i > 5 then
+                    break
+                end
+                local sc = '<leader>l' .. tostring(i)
+                local session_path = sessions_root .. session.path
+                table.insert(val, {
+                    type = 'button',
+                    val = tostring(i) .. '\t' .. session.display_name,
+                    on_press = function ()
+                        autosession.RestoreSession(session_path)
+                        require('nvim-tree.api').tree.open()
+                    end,
+                    opts = {
+                        keymap = { 'n', sc, ':RestoreSession ' .. session_path .. '<CR>', {} },
+                        position = 'center',
+                        width = 80,
+                        shortcut = sc,
+                        align_shortcut = 'right',
+                        hl_shortcut = 'Keyword',
+                    }
+                })
+            end
+            return val
+        end,
+    }
+-- layout 
+config.layout = {
+   { type = "padding", val = 2},
+   header_color(),
+   { type = "padding", val = 2},
+   buttons,
+   { type = "padding", val = 2},
+   dashboard.section.footer,
+   { type = "padding", val = 2},
+   theta.section_mru,
+}
+--config.layout[2] = header_color()
+--config.layout[4] = buttons
+--config.layout[5] = dashboard.section.footer 
+--config.layout[6] = section_mru
 alpha.setup(config)
