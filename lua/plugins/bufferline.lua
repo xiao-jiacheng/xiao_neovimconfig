@@ -8,8 +8,12 @@ vim.api.nvim_set_keymap("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>", {norema
 vim.api.nvim_set_keymap("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<leader>-", ":BufferLinePickClose<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<leader>bg", ":BufferLinePick", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>q", ":BufferLinePickClose<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>bp", ":BufferLinePick<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>-", ":BufferLineCyclePrev<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>+", ":BufferLineCycleNext<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>m+", ":lua require'bufferline'.move_to(1)<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>m-", ":lua require'bufferline'.move_to(-1)<CR>", {noremap = true, silent = true})
 
 
 vim.opt.termguicolors = true

@@ -17,3 +17,4 @@ keymap.set("i", "<M-l>", "<Right>")
 -- -----------------  普通模式  -----------------
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "<leader>cs", ":colorscheme<CR>")
+keymap.set("n", "<leader>bash", ":terminal<CR>")

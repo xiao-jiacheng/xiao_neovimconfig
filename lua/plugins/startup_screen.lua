@@ -168,15 +168,13 @@ local buttons = {
 
 local time = os.date("%Y-%m-%d | %H:%M:%S",os.time()) 
 local function footer()
-    --return "   Have Fun with neovim"
-    --return " 󰩃 󰋇 󱐟  小狗不需要思考，只需要顿顿吃饱 󱚡  "
     local foot = {
-       "󰩃 󰋇 󱐟  小狗不需要思考，只需要顿顿吃饱  󱚡  " ,
+       --"󰩃 󰋇 󱐟  小狗不需要思考，只需要顿顿吃饱  󱚡  " ,
+       "            NeoVim 󰭟 启动  ",
        "" ,
-       --"          Have Fun with neovim   ",
        --"",
        
-       "           "..time..             "    " 
+       "        "..time..             "    " 
     }
     return foot 
 end
