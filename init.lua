@@ -23,7 +23,7 @@ require('plugins.startup_screen')
 
 require('plugins.bufferline')
 
---require('coc.coc')
+require('coc.coc')
 
 --require('plugins.indent_blankline')
 
