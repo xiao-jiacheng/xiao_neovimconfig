@@ -16,6 +16,7 @@ local plugins = {
     -- My plugins here
 --    "kyazdani42/nvim-web-devicon",
     "folke/tokyonight.nvim",
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     --telescope
     {
       'nvim-telescope/telescope.nvim', tag = '0.1.2',
